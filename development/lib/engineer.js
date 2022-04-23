@@ -8,10 +8,12 @@ class Engineer extends Employee {
     }
 
     getRole(){
-        console.log('Role: Engineer')
+        return 'Engineer'
+       
     }
     getGithub(){
-        console.log(`${this.github}`)
+        return this.github
+       
 
     }
 
@@ -21,6 +23,3 @@ class Engineer extends Employee {
 
 module.exports = Engineer;
 
-const Elana = new Engineer('e', 8, 'eese', 'jmaun22');
-
-Elana.getGithub();

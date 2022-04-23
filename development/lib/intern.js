@@ -8,11 +8,15 @@ class Intern extends Employee {
     }
 
     getSchool(){
-        console.log(`${this.school}`)
+
+        return this.school
+        
     }
 
     getRole(){
-        console.log('Role: Intern')
+
+        return 'Intern'
+   
     }
 
 
@@ -20,9 +24,3 @@ class Intern extends Employee {
 }
 
 module.exports = Intern;
-
-const jim = new Intern('Jesse', 9, "fdsf", "UCF")
-
-jim.getSchool();
-
-console.log("fsdf")

@@ -7,16 +7,23 @@ class Employee {
 
     getName(){
 
-        console.log(`email is: ${this.email}`)
+        return this.email
+
+       
     }
 
     getId() {
-        console.log(`Id is ${this.id}`)
+
+        return this.id
+       
     }
 
     getRole(){
-        console.log('Role: Employee')
-    }
+
+        return 'Employee'
+      
+}
 }
 
 module.exports = Employee
+

@@ -45,7 +45,7 @@ name: 'school',
 
 ]
 
-super(name, id, email, officeNumber);
+
 
 const managerQuestions = [
 
