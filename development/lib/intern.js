@@ -19,6 +19,8 @@ class Intern extends Employee {
 
 }
 
+module.exports = Intern;
+
 const jim = new Intern('Jesse', 9, "fdsf", "UCF")
 
 jim.getSchool();

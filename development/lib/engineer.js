@@ -19,6 +19,8 @@ class Engineer extends Employee {
 
 }
 
+module.exports = Engineer;
+
 const Elana = new Engineer('e', 8, 'eese', 'jmaun22');
 
 Elana.getGithub();

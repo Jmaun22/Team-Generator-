@@ -17,6 +17,8 @@ class Manager extends Employee {
 
 }
 
+module.exports = Manager;
+
 const man = new Manager('joe', 9, "fsf", 4)
 man.getRole();
 console.log(`${man.name}, ${man.email}, ${man.id}`)
