@@ -1,4 +1,4 @@
-const Employee = require('development/lib/employee.js');
+const Employee = require('./employee.js');
 
 class Manager extends Employee {
     constructor(name, id, email, officeNumber){
@@ -16,3 +16,8 @@ class Manager extends Employee {
 
 
 }
+
+const man = new Manager('joe', 9, "fsf", 4)
+man.getRole();
+console.log(`${man.name}, ${man.email}, ${man.id}`)
+
