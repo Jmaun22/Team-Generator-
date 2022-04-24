@@ -2,6 +2,7 @@ const Engineer =  require('/Users/jessemaun/Documents/UCF/homeWork/Team-Generato
 const Intern = require('/Users/jessemaun/Documents/UCF/homeWork/Team-Generator-/development/lib/intern.js')
 const Manager = require('/Users/jessemaun/Documents/UCF/homeWork/Team-Generator-/development/lib/manager.js')
 const questions = require('/Users/jessemaun/Documents/UCF/homeWork/Team-Generator-/development/lib/questions.js')
+const  addEmployeeList = require('/Users/jessemaun/Documents/UCF/homeWork/Team-Generator-/development/dist/createhtml.js')
 const fs = require('fs')
 const inquirer = require('inquirer');
 const Choices = require('inquirer/lib/objects/choices')
@@ -66,10 +67,16 @@ const collectInternQuestions = () => {
             pickTeammember();
 
         } else {
-
             let html = addEmployeeList(employeeList);
 
-            
+
+            fs.writeFile('team.html', html, (error) => {
+                if(error) throw error;
+                console.log("Team html created")
+            })
+
+        
+
         }
 
     })
@@ -90,6 +97,23 @@ const collectManagerQuestions = () => {
         const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
         console.log(manager)
         employeeList.push(manager);
+
+        if(response.addAnother == 'yes'){
+
+            pickTeammember();
+
+        } else {
+            let html = addEmployeeList(employeeList);
+
+
+            fs.writeFile('team.html', html, (error) => {
+                if(error) throw error;
+                console.log("Team html created")
+            })
+
+        
+
+        }
     })
 
 }
@@ -105,6 +129,23 @@ const collectEngineerQuestions = () => {
         const engineer = new Engineer(response.name, response.id, response.email, response.github);
         console.log(engineer)
         employeeList.push(engineer);
+
+        if(response.addAnother == 'yes'){
+
+            pickTeammember();
+
+        } else {
+            let html = addEmployeeList(employeeList);
+
+
+            fs.writeFile('team.html', html, (error) => {
+                if(error) throw error;
+                console.log("Team html created")
+            })
+
+        
+
+        }
     })
 
 }

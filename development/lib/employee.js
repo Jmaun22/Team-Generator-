@@ -7,7 +7,7 @@ class Employee {
 
     getName(){
 
-        return this.email
+        return this.name
 
        
     }
@@ -22,6 +22,9 @@ class Employee {
 
         return 'Employee'
       
+}
+getEmail(){
+    return this.email
 }
 }
 
