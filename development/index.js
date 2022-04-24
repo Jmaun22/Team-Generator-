@@ -59,7 +59,7 @@ const collectInternQuestions = () => {
 
         
 
-        console.log(intern)
+  
         employeeList.push(intern);
 
         if(response.addAnother == 'yes'){
@@ -95,7 +95,7 @@ const collectManagerQuestions = () => {
         // constructor(name, id, email, officeNumber){
 
         const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
-        console.log(manager)
+      
         employeeList.push(manager);
 
         if(response.addAnother == 'yes'){
@@ -127,7 +127,7 @@ const collectEngineerQuestions = () => {
     .then(response => {
         //  constructor(name, id, email, github){
         const engineer = new Engineer(response.name, response.id, response.email, response.github);
-        console.log(engineer)
+    
         employeeList.push(engineer);
 
         if(response.addAnother == 'yes'){
