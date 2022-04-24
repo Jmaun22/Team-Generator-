@@ -18,6 +18,12 @@ const engineerQuestions = [
   name: 'github',
 },
 
+{type: 'list',
+message: 'Would you like to add another(yes or no)?',
+name: 'addAnother',
+choices: ['yes', 'no']
+},
+
 ];
 
 
@@ -37,9 +43,15 @@ message: 'What is your email?',
 name: 'email',
 },
 {type: 'input',
-message: 'What is school do you attend?',
+message: 'What school do you attend?',
 name: 'school',
-}
+},
+
+{type: 'list',
+message: 'Would you like to add another(yes or no)?',
+name: 'addAnother',
+choices: ['yes', 'no']
+},
 
 
 
@@ -64,8 +76,13 @@ name: 'email',
 },
 
 {type: 'input',
-message: 'What is your officeNumber?',
+message: 'What is your office Number?',
 name: 'officeNumber',
+},
+{type: 'list',
+message: 'Would you like to add another(yes or no)?',
+name: 'addAnother',
+choices: ['yes', 'no']
 },
 ]
 

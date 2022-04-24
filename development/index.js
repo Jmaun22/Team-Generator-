@@ -24,7 +24,7 @@ inquirer
     {type: 'list',
     message: 'Which type of employee would you like to add?',
     name: 'employeeType',
-    choices: ['Intern', 'Mananger', 'Engineer']
+    choices: ['Intern', 'Manager', 'Engineer']
     
 }
 ])
@@ -32,7 +32,7 @@ inquirer
    if(pick.employeeType === 'Intern'){
     collectInternQuestions();
 
-   } else if(pick.employeeType === 'Mananger'){
+   } else if(pick.employeeType === 'Manager'){
 
     collectManagerQuestions();
 
@@ -59,6 +59,19 @@ const collectInternQuestions = () => {
         
 
         console.log(intern)
+        employeeList.push(intern);
+
+        if(response.addAnother == 'yes'){
+
+            pickTeammember();
+
+        } else {
+
+            let html = addEmployeeList(employeeList);
+
+            
+        }
+
     })
 
 
@@ -72,7 +85,11 @@ const collectManagerQuestions = () => {
 
     inquirer.prompt(questions.managerQuestions)
     .then(response => {
-        console.log(response)
+        // constructor(name, id, email, officeNumber){
+
+        const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
+        console.log(manager)
+        employeeList.push(manager);
     })
 
 }
@@ -84,7 +101,10 @@ const collectEngineerQuestions = () => {
 
     inquirer.prompt(questions.engineerQuestions)
     .then(response => {
-        console.log(response)
+        //  constructor(name, id, email, github){
+        const engineer = new Engineer(response.name, response.id, response.email, response.github);
+        console.log(engineer)
+        employeeList.push(engineer);
     })
 
 }
