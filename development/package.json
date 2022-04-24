@@ -1,7 +1,12 @@
 {
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "inquirer": "^8.2.2",
+    "inquirer": "^8.2.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
     "jest": "^27.5.1"
   }
 }
