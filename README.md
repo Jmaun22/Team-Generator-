@@ -24,6 +24,8 @@
     [videolink](https://watch.screencastify.com/v/jaIUQDw61K1iSPptiQ2Z)
 
     ## Pictures of html that is generated
+    
+    ![html](https://github.com/Jmaun22/Team-Generator-/blob/db52f6bf465ea658985e7b1782f02d253b61af2d/Screen%20Shot%202022-04-25%20at%205.09.57%20PM.png)
 
   
 
