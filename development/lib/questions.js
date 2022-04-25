@@ -17,6 +17,10 @@ const engineerQuestions = [
   message: 'What is your gitHub username?',
   name: 'github',
 },
+{type: 'input',
+message: 'What is the link to your gitHub account?',
+name: 'gitlink',
+},
 
 {type: 'list',
 message: 'Would you like to add another(yes or no)?',

@@ -126,7 +126,7 @@ const collectEngineerQuestions = () => {
     inquirer.prompt(questions.engineerQuestions)
     .then(response => {
         //  constructor(name, id, email, github){
-        const engineer = new Engineer(response.name, response.id, response.email, response.github);
+        const engineer = new Engineer(response.name, response.id, response.email, response.github, response.gitlink);
     
         employeeList.push(engineer);
 

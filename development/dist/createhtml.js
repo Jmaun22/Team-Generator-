@@ -23,7 +23,7 @@ const addEmployeeList = (employeeList) => {
               <div class="card-body" style="background-color: #FAF5E4;">
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item">id: ${member.getId()}</li>
-                  <li class="list-group-item">Email: ${member.getEmail()}</li>
+                  <li class="list-group-item"><a href= "mailto:${member.getEmail()}?subject=Subject&body=message%20goes%20here">${member.getEmail()}</a></li>
                   <li class="list-group-item">School: ${member.getSchool()}</li>
                 </ul>
               </div>
@@ -50,7 +50,7 @@ const addEmployeeList = (employeeList) => {
                 <div class="card-body" style="background-color: #FAF5E4;">
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item">id: ${member.getId()}</li>
-                  <li class="list-group-item">Email: ${member.getEmail()}</li>
+                  <li class="list-group-item"><a href= "mailto:${member.getEmail()}?subject=Subject&body=message%20goes%20here">${member.getEmail()}</a>}</li>
                   <li class="list-group-item">Office Number: ${member.getOfficeNumber()}</li>
                 </ul>
               </div>
@@ -75,8 +75,8 @@ const addEmployeeList = (employeeList) => {
               <div class="card-body" style="background-color: #FAF5E4;">
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item">id: ${member.getId()}</li>
-                  <li class="list-group-item">Email: ${member.getEmail()}</li>
-                  <li class="list-group-item">Git Hub: ${member.getGithub()}</li>
+                  <li class="list-group-item">Email <a href= "mailto:${member.getEmail()}?subject=Subject&body=message%20goes%20here">${member.getEmail()}</a> </li>
+                  <li class="list-group-item">Git Hub: <a href="${member.gitHubLink()}"> ${member.getGithub()}</a></li>
                 </ul>
               </div>
               
