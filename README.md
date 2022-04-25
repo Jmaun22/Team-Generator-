@@ -20,6 +20,7 @@
     clone done git repo 
 
     ## Video link
+    vidoe walk through of this project.
     [videolink](https://watch.screencastify.com/v/jaIUQDw61K1iSPptiQ2Z)
 
     ## Pictures of html that is generated
